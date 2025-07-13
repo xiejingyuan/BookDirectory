@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Book = require('../models/Book');
+const Book = require('../models/book');
 
 // Middleware: check if user is logged in
 function isLoggedIn(req, res, next) {
