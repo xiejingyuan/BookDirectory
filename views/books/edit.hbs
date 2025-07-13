@@ -1,0 +1,8 @@
+<h2>Edit Book</h2>
+<form method="POST" action="/books/edit/{{book._id}}">
+  <input type="text" name="title" value="{{book.title}}">
+  <input type="text" name="author" value="{{book.author}}">
+  <input type="text" name="genre" value="{{book.genre}}">
+  <input type="number" name="year" value="{{book.year}}">
+  <button type="submit">Save</button>
+</form>

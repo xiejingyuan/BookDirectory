@@ -1,0 +1,25 @@
+{
+  "name": "book-directory-app",
+  "version": "1.0.0",
+  "description": "A Book Directory with CRUD and GitHub login for COMP 2068",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "author": "Jingyuan",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.4",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "hbs": "^4.2.0",
+    "http-errors": "^2.0.0",
+    "mongoose": "^7.6.1",
+    "morgan": "^1.10.0",
+    "passport": "^0.6.0",
+    "passport-github2": "^0.1.12",
+    "passport-local": "^1.0.0"
+  }
+}
