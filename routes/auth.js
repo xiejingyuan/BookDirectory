@@ -24,7 +24,7 @@ passport.use(new LocalStrategy(
 passport.use(new GitHubStrategy({
   clientID: process.env.GITHUB_CLIENT_ID,
   clientSecret: process.env.GITHUB_CLIENT_SECRET,
-  callbackURL: '/auth/github/callback'
+  callbackURL: 'https://bookdirectory-dvr6.onrender.com/auth/github/callback'
 }, async (accessToken, refreshToken, profile, done) => {
   let user = await User.findOne({ githubId: profile.id });
   if (!user) user = await User.create({ githubId: profile.id, username: profile.username });
